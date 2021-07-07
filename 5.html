@@ -1,0 +1,154 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-07-04 00:28:44
+ * @LastEditTime: 2021-07-07 00:21:13
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \源代码\1.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+    <link rel="stylesheet" href="./CSS/5.css">
+    <link rel="stylesheet" href="./CSS/页眉页脚.css">
+</head>
+
+<body>
+    <!-- 网页的第一部分是页眉区 -->
+    <header id="header">
+        <!-- 页眉区我制作了整个网站的主要菜单板块 -->
+        <div id="main_menu">
+            <div class="box">
+                <!-- 这里采用了一个无序列表 -->
+                <ul>
+                    <li ><a href="./1.html" >HELLO！I'm ZhangXiangrui.</a></li>
+                    <li ><a href="./2.html" >My experience</a></li>
+                    <li ><a href="./3.html" >My hobbies</a></li>
+                    <li ><a href="./4.html" >My photos</a></li>
+                    <li class="active"><a href="./5.html" >Let's make friends!</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+	<!-- 下面是我的交友问卷，由表单的形式展现 -->
+    
+    <h1 >我的交友问卷</h1>
+    <h2>首先很高兴认识你，请让我知道屏幕前的你是个怎样的人吧^_^</h2>
+
+    <form action="http://www.starbuzzcoffee.com/processorder.php" method="post">
+
+	<fieldset>
+		<legend>基本信息</legend>
+		<div class="tableRow">
+			<label for="name">你的名字:</label>
+			<input type="text" id="name" name="name" value="" placeholder="张三" required> 
+		</div>
+		<div class="tableRow">
+			<label for="old">你的年龄:</label>
+			<input type="number" id="old" name="old" min="0" max="120">
+		</div>
+		<div class="tableRow">
+			<label for="gender">
+          		你的性别:
+			</label>
+            <select id="gender" name="gender">
+              <option value="boy">男</option>
+              <option value="girl">女</option>
+            </select>
+		</div>
+		<div class="tableRow">
+			<label for="address">你所在的城市:</label>
+			<input type="text" id="address" name="address" value="" placeholder="湖北武汉" required> 
+		</div>
+		<div class="tableRow">
+			<label for="hobby">你的爱好:</label>
+			<input type="text" id="hobby" name="hobby" value="" placeholder="唱歌" required> 
+		</div>
+
+
+		<div class="tableRow">
+			<label for="phone">联系方式:</label>
+			<input type="tel" id="phone" name="phone" value="" placeholder="xxxxxxxx" required>
+
+	</fieldset>
+
+	<fieldset>
+		<legend>深入了解</legend>
+
+		<div class="tableRow">
+			<label>你是一个爱党爱国的人吗:</label>
+			<p>
+           		<input type="radio" id="whole_beantype" name="beantype" value="whole"> 
+					<label for="whole_beantype">是</label><br>
+            	<input type="radio" id="ground_beantype" name="beantype" value="ground" checked> 
+            		<label for="ground_beantype">否</label><br>
+				<input type="radio" id="ground_beantype" name="beantype" value="ground" checked> 
+            		<label for="ground_beantype">不确定</label>
+			</p>
+		</div>
+
+		<div class="tableRow">
+			<label>你自我评价有以下那些品质:</label>
+			<p>
+            	<input type="checkbox" id="giftwrap_extras" name="extras[]" value="giftwrap"> 
+					<label for="">心地善良</label><br>
+            	<input type="checkbox" id="catalog_extras" name="extras[]" value="catalog" >
+            		<label for="">热爱生活</label><br>
+				<input type="checkbox" id="giftwrap_extras" name="extras[]" value="giftwrap"> 
+					<label for="">诚实守信</label><br>
+            	<input type="checkbox" id="catalog_extras" name="extras[]" value="catalog" >
+            		<label for="">勤劳勇敢</label><br>
+				<input type="checkbox" id="giftwrap_extras" name="extras[]" value="giftwrap"> 
+					<label for="">勇于尝试新事物</label><br>
+            	<input type="checkbox" id="catalog_extras" name="extras[]" value="catalog" checked>
+            		<label for="">乐观积极</label>
+				
+			</p>
+		</div>
+
+	</div>
+	<div class="tableRow">
+		<label for="say something">你有什么想对我说的吗:</label>
+		<textarea id="say something" name="say something"></textarea>
+	</div>
+	<div class="tableRow">
+		<label></label>
+		<input type="submit" value="提交">
+	</div>
+	</fieldset>
+    </form>
+
+
+    <!-- 以下是网页的页脚区，在这里我标明自己的创作者身份，以及联系方式 -->
+
+    <footer id="footer">
+        <div class="box">
+            <!-- 页脚区左半部分，标明创作者身份 -->
+            <div id="footer_left">
+                <div id="posts_count">网页设计者：张祥蕊<span>中国，湖北</span></div>
+                <h1>Web Designer: Zhang Xiangrui （Hubei, China）</h1>
+            </div>
+            <!-- 页脚区右半部分，我的联系方式 -->
+            <div id="footer_right">
+                <div id="footer_contact">
+                    <strong>My contact info.</strong>
+                    <div id="footer_wechat">
+                        <img src="./images/img_1/2.JPG" width="100" height="100" alt="WeChat" title="WeChat">
+                         Wechat
+                    </div>
+                    <a href="https://weibo.com/u/5129040960?topnav=1&wvr=6&topsug=1&is_all=1" target="_blank"><span
+                            class="icon-weibo">Weibo</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

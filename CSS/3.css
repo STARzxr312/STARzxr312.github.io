@@ -1,0 +1,28 @@
+
+
+/* table */
+table {
+    margin-left:      auto;
+    margin-right:     auto;
+    border:           thin solid black;
+    caption-side:     bottom;
+    border-collapse:  collapse;
+  }
+  
+  table table th {
+    background-color: white;
+ 
+  }
+  
+
+  /* 这里没有设置中间线框，因为我想要极简风格 */
+  td, th {
+    padding:          15px;
+  }
+  
+  th {
+    background-color: #3063c2;
+    color: rgb(255, 255, 255);
+  }
+
+

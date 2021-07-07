@@ -1,0 +1,33 @@
+#list {
+  display: inline-block;
+  float: left;
+}
+#list li {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  margin: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+#list .title {
+  background: rgba(255, 255, 255, 0.562);
+  font-size: 18px;
+  line-height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  height: 30px;
+  width: 300px;
+  padding: 5px 10px;
+  overflow: hidden;
+  -webkit-transition: bottom 0.1s linear 0.2s;
+  -moz-transition: bottom 0.1s linear 0.2s;
+  -ms-transition: bottom 0.1s linear 0.2s;
+  transition: bottom 0.1s linear 0.2s;
+}
+#list li:hover .title {
+  bottom: 0;
+}
+
